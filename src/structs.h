@@ -373,6 +373,7 @@ typedef struct expand {
  * This needs to be saved for recursive commands, put them in a structure for
  * easy manipulation.
  */
+
 typedef struct {
   int hide;                             /* TRUE when ":hide" was used */
   int split;                            /* flags for win_split() */

@@ -326,6 +326,7 @@
 #include "ui.h"
 #include "undo.h"
 #include "os/os.h"
+//#include "hunspell.h"
 
 #ifndef UNIX            /* it's in os_unix_defs.h for Unix */
 # include <time.h>      /* for time_t */
@@ -1046,6 +1047,7 @@ spell_check (
   /* Return here when loading language files failed. */
   if (wp->w_s->b_langp.ga_len == 0)
     return 1;
+  printf("here\n");
 
   vim_memset(&mi, 0, sizeof(matchinf_T));
 
