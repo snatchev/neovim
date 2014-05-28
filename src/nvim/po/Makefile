@@ -8,6 +8,7 @@ LANGUAGES = \
 		af \
 		ca \
 		cs \
+		bg \
 		de \
 		en_GB \
 		eo \
@@ -49,6 +50,7 @@ MOFILES = \
 		af.mo \
 		ca.mo \
 		cs.mo \
+		bg.mo \
 		de.mo \
 		en_GB.mo \
 		eo.mo \
@@ -90,6 +92,7 @@ CHECKFILES = \
 		af.ck \
 		ca.ck \
 		cs.ck \
+		bg.ck \
 		de.ck \
 		en_GB.ck \
 		eo.ck \
