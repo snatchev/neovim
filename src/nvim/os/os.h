@@ -95,7 +95,7 @@ char *os_getenvname_at_index(size_t index);
 /// @return the process ID.
 int64_t os_get_pid(void);
 
-/// Get the hostname of the machine runing Neovim.
+/// Get the hostname of the machine running Neovim.
 ///
 /// @param hostname Buffer to store the hostname.
 /// @param len Length of `hostname`.
@@ -108,7 +108,7 @@ char *os_get_user_directory(const char *name);
 
 /// Get stat information for a file.
 ///
-/// @return OK on success, FAIL if an failure occured.
+/// @return OK on success, FAIL if an failure occurred.
 int os_stat(const char_u *name, uv_stat_t *statbuf);
 
 /// Struct which encapsulates stat information.
@@ -121,21 +121,21 @@ typedef struct {
 ///
 /// @param file_descriptor File descriptor of the file.
 /// @param[out] file_info Pointer to a FileInfo to put the information in.
-/// @return `true` on sucess, `false` for failure.
+/// @return `true` on success, `false` for failure.
 bool os_get_file_info(const char *path, FileInfo *file_info);
 
 /// Get the file information for a given path without following links
 ///
 /// @param path Path to the file.
 /// @param[out] file_info Pointer to a FileInfo to put the information in.
-/// @return `true` on sucess, `false` for failure.
+/// @return `true` on success, `false` for failure.
 bool os_get_file_info_link(const char *path, FileInfo *file_info);
 
 /// Get the file information for a given file descriptor
 ///
 /// @param file_descriptor File descriptor of the file.
 /// @param[out] file_info Pointer to a FileInfo to put the information in.
-/// @return `true` on sucess, `false` for failure.
+/// @return `true` on success, `false` for failure.
 bool os_get_file_info_fd(int file_descriptor, FileInfo *file_info);
 
 /// Compare the inodes of two FileInfos

@@ -48,7 +48,7 @@ static int word_length(char_u *command);
 
 /// Queues selected range for writing to the child process stdin.
 ///
-/// @param req The structure containing information to peform the write
+/// @param req The structure containing information to perform the write
 static void write_selection(uv_write_t *req);
 
 /// Cleanup memory and restore state modified by `os_call_shell`.
@@ -389,7 +389,7 @@ static void alloc_cb(uv_handle_t *handle, size_t suggested, uv_buf_t *buf)
 static void read_cb(uv_stream_t *stream, ssize_t cnt, const uv_buf_t *buf)
 {
   // TODO(tarruda): avoid using a growable array for this, refactor the
-  // algorithm to call `ml_append` directly(skip unecessary copies/resizes)
+  // algorithm to call `ml_append` directly(skip unnecessary copies/resizes)
   int i;
   ProcessData *pdata = (ProcessData *)stream->data;
 

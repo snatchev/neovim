@@ -105,7 +105,7 @@ void msgpack_rpc_call(uint64_t id, msgpack_object *req, msgpack_packer *res)
   }
 
   if (req->via.array.ptr[3].type != MSGPACK_OBJECT_ARRAY) {
-    msgpack_rpc_error("Paremeters must be an array", res);
+    msgpack_rpc_error("Parameters must be an array", res);
     return;
   }
 

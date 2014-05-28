@@ -429,7 +429,7 @@ static Object vim_to_object_rec(typval_T *obj, Map(ptr_t) *lookup)
   if (obj->v_type == VAR_LIST || obj->v_type == VAR_DICT) {
     // Container object, add it to the lookup table
     if (map_has(ptr_t)(lookup, obj)) {
-      // It's already present, meaning we alredy processed it so just return
+      // It's already present, meaning we already processed it so just return
       // nil instead.
       return rv;
     }
